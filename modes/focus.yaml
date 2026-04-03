@@ -1,0 +1,17 @@
+block_apps:
+  - discord
+  - spotify
+  - vlc
+allow_apps:
+  - code
+  - terminal
+  - chrome
+boost_apps:
+  code: -5
+reduce_apps:
+  chrome: 5
+kill_all_except_allow: false
+brightness: 60
+volume: 20
+night_light: false
+cpu_limit: 80

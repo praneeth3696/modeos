@@ -1,0 +1,12 @@
+block_apps:
+allow_apps:
+  - impress
+  - powerpnt
+  - chrome
+boost_apps:
+reduce_apps:
+kill_all_except_allow: false
+brightness: 100
+volume: 100
+night_light: false
+cpu_limit: 80

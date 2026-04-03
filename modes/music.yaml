@@ -1,0 +1,12 @@
+block_apps:
+allow_apps:
+  - spotify
+  - vlc
+boost_apps:
+  spotify: -5
+reduce_apps:
+kill_all_except_allow: false
+brightness: 20
+volume: 60
+night_light: true
+cpu_limit: 20

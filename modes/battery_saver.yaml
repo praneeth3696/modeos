@@ -1,0 +1,12 @@
+block_apps:
+allow_apps:
+boost_apps:
+reduce_apps:
+  chrome: 10
+  steam: 15
+  discord: 10
+kill_all_except_allow: false
+brightness: 20
+volume: 10
+night_light: true
+cpu_limit: 30

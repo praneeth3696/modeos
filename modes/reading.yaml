@@ -1,0 +1,16 @@
+block_apps:
+  - discord
+  - steam
+  - vlc
+allow_apps:
+  - chrome
+  - okular
+  - evince
+boost_apps:
+reduce_apps:
+  chrome: 5
+kill_all_except_allow: false
+brightness: 30
+volume: 0
+night_light: true
+cpu_limit: 30

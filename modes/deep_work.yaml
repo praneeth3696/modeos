@@ -1,0 +1,17 @@
+block_apps:
+  - discord
+  - steam
+  - chrome
+allow_apps:
+  - code
+  - terminal
+  - nvim
+boost_apps:
+  code: -10
+  terminal: -10
+reduce_apps:
+kill_all_except_allow: true
+brightness: 80
+volume: 10
+night_light: true
+cpu_limit: 100

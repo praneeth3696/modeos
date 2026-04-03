@@ -1,0 +1,11 @@
+block_apps:
+allow_apps:
+  - terminal
+boost_apps:
+  terminal: 0
+reduce_apps:
+kill_all_except_allow: true
+brightness: 30
+volume: 0
+night_light: false
+cpu_limit: 20

@@ -1,0 +1,13 @@
+block_apps:
+allow_apps:
+  - code
+  - terminal
+  - chrome
+boost_apps:
+  code: -5
+reduce_apps:
+kill_all_except_allow: false
+brightness: 60
+volume: 30
+night_light: true
+cpu_limit: 100

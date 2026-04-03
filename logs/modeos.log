@@ -1,0 +1,409 @@
+2026-04-03 21:08:53,946 - ModeOS - INFO - Scanning for installed applications...
+2026-04-03 21:08:53,964 - ModeOS - INFO - Successfully scanned 213 application references.
+2026-04-03 21:08:53,964 - ModeOS - INFO - Saved to /home/praneeth/Downloads/moodOS/modeos/data/installed_apps.json
+2026-04-03 21:09:10,117 - ModeOS - INFO - === Activating 'SLEEP' Mode ===
+2026-04-03 21:09:10,679 - ModeOS - INFO - Killing all user processes except allowed ones...
+2026-04-03 21:09:37,537 - ModeOS - INFO - === Activating 'SLEEP' Mode ===
+2026-04-03 21:09:38,109 - ModeOS - INFO - Killing all user processes except allowed ones...
+2026-04-03 21:09:38,142 - ModeOS - INFO - Killed non-whitelisted process: kdeconnectd (PID: 3213)
+2026-04-03 21:09:38,143 - ModeOS - INFO - Killed non-whitelisted process: evolution-alarm-notify (PID: 3259)
+2026-04-03 21:09:38,143 - ModeOS - INFO - Killed non-whitelisted process: ibus-extension-gtk3 (PID: 3287)
+2026-04-03 21:09:38,147 - ModeOS - INFO - Killed non-whitelisted process: xdg-desktop-portal-gnome (PID: 3654)
+2026-04-03 21:09:38,148 - ModeOS - INFO - Killed non-whitelisted process: xdg-desktop-portal-gtk (PID: 3678)
+2026-04-03 21:09:38,150 - ModeOS - INFO - Killed non-whitelisted process: snap (PID: 4527)
+2026-04-03 21:09:38,153 - ModeOS - INFO - Killed non-whitelisted process: gnome-calendar (PID: 8171)
+2026-04-03 21:09:38,154 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 8451)
+2026-04-03 21:09:38,154 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 8455)
+2026-04-03 21:09:38,155 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 8457)
+2026-04-03 21:09:38,155 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 8459)
+2026-04-03 21:09:38,156 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 8485)
+2026-04-03 21:09:38,156 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 8497)
+2026-04-03 21:09:38,156 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 8518)
+2026-04-03 21:09:38,157 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 8631)
+2026-04-03 21:09:38,157 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 8929)
+2026-04-03 21:09:38,157 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 8931)
+2026-04-03 21:09:38,157 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 8932)
+2026-04-03 21:09:38,158 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 8973)
+2026-04-03 21:09:38,158 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 9130)
+2026-04-03 21:09:38,167 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 10607)
+2026-04-03 21:09:38,168 - ModeOS - INFO - Killed non-whitelisted process: nautilus (PID: 13300)
+2026-04-03 21:09:38,168 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 18815)
+2026-04-03 21:09:38,168 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 19552)
+2026-04-03 21:09:38,169 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 19553)
+2026-04-03 21:09:38,169 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 19568)
+2026-04-03 21:09:38,170 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 27721)
+2026-04-03 21:09:38,171 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 27804)
+2026-04-03 21:09:38,171 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 27819)
+2026-04-03 21:09:38,173 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 31808)
+2026-04-03 21:09:38,173 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 31919)
+2026-04-03 21:09:38,174 - ModeOS - INFO - Killed non-whitelisted process: antigravity (PID: 32249)
+2026-04-03 21:09:38,178 - ModeOS - INFO - Global CPU prioritization adjusting toward mode limit (10%)
+2026-04-03 21:22:55,386 - ModeOS - INFO - === Activating 'DEEP_WORK' Mode ===
+2026-04-03 21:22:55,928 - ModeOS - INFO - Killing all user processes except allowed ones...
+2026-04-03 21:22:56,003 - ModeOS - INFO - Target app 'code' (exec: 'code') is not currently running to adjust priority.
+2026-04-03 21:22:56,003 - ModeOS - INFO - Target app 'terminal' (exec: 'gnome-terminal') is not currently running to adjust priority.
+2026-04-03 21:22:56,003 - ModeOS - INFO - Global CPU prioritization adjusting toward mode limit (100%)
+2026-04-03 21:22:56,503 - ModeOS - INFO - 
+--- System Stats Comparison ---
+2026-04-03 21:22:56,504 - ModeOS - INFO - CPU Usage:    5.7% -> 5.6%
+2026-04-03 21:22:56,504 - ModeOS - INFO - Memory Usage: 69.6% -> 69.7%
+2026-04-03 21:22:56,504 - ModeOS - INFO - -------------------------------
+
+2026-04-03 21:22:56,504 - ModeOS - INFO - === 'DEEP_WORK' Mode Activated Successfully ===
+2026-04-03 21:23:54,517 - ModeOS - INFO - === Resetting System to Default State ===
+2026-04-03 21:23:54,567 - ModeOS - INFO - Resetting all user process priorities to 0...
+2026-04-03 21:23:54,570 - ModeOS - INFO - Reset priority for kworker/R-rcu_gp (PID: 4) to 0
+2026-04-03 21:23:54,571 - ModeOS - INFO - Reset priority for kworker/R-sync_wq (PID: 5) to 0
+2026-04-03 21:23:54,571 - ModeOS - INFO - Reset priority for kworker/R-kvfree_rcu_reclaim (PID: 6) to 0
+2026-04-03 21:23:54,571 - ModeOS - INFO - Reset priority for kworker/R-slub_flushwq (PID: 7) to 0
+2026-04-03 21:23:54,571 - ModeOS - INFO - Reset priority for kworker/R-netns (PID: 8) to 0
+2026-04-03 21:23:54,571 - ModeOS - INFO - Reset priority for kworker/0:0H-events_highpri (PID: 11) to 0
+2026-04-03 21:23:54,572 - ModeOS - INFO - Reset priority for kworker/R-mm_percpu_wq (PID: 13) to 0
+2026-04-03 21:23:54,573 - ModeOS - INFO - Reset priority for kworker/2:0H-events_highpri (PID: 26) to 0
+2026-04-03 21:23:54,574 - ModeOS - INFO - Reset priority for kworker/4:0H-events_highpri (PID: 32) to 0
+2026-04-03 21:23:54,575 - ModeOS - INFO - Reset priority for kworker/6:0H-events_highpri (PID: 38) to 0
+2026-04-03 21:23:54,576 - ModeOS - INFO - Reset priority for kworker/8:0H-events_highpri (PID: 44) to 0
+2026-04-03 21:23:54,576 - ModeOS - INFO - Reset priority for kworker/10:0H-events_highpri (PID: 50) to 0
+2026-04-03 21:23:54,577 - ModeOS - INFO - Reset priority for kworker/12:0H-events_highpri (PID: 56) to 0
+2026-04-03 21:23:54,577 - ModeOS - INFO - Reset priority for kworker/14:0H-events_highpri (PID: 62) to 0
+2026-04-03 21:23:54,578 - ModeOS - INFO - Reset priority for kworker/1:0H-events_highpri (PID: 68) to 0
+2026-04-03 21:23:54,579 - ModeOS - INFO - Reset priority for kworker/3:0H-events_highpri (PID: 74) to 0
+2026-04-03 21:23:54,579 - ModeOS - INFO - Reset priority for kworker/5:0H-events_highpri (PID: 80) to 0
+2026-04-03 21:23:54,580 - ModeOS - INFO - Reset priority for kworker/7:0H-events_highpri (PID: 86) to 0
+2026-04-03 21:23:54,580 - ModeOS - INFO - Reset priority for kworker/9:0H-events_highpri (PID: 92) to 0
+2026-04-03 21:23:54,581 - ModeOS - INFO - Reset priority for kworker/11:0H-events_highpri (PID: 98) to 0
+2026-04-03 21:23:54,581 - ModeOS - INFO - Reset priority for kworker/13:0H-events_highpri (PID: 104) to 0
+2026-04-03 21:23:54,582 - ModeOS - INFO - Reset priority for kworker/15:0H-kblockd (PID: 110) to 0
+2026-04-03 21:23:54,582 - ModeOS - INFO - Reset priority for kworker/R-inet_frag_wq (PID: 112) to 0
+2026-04-03 21:23:54,583 - ModeOS - INFO - Reset priority for kworker/R-writeback (PID: 121) to 0
+2026-04-03 21:23:54,583 - ModeOS - INFO - Reset priority for ksmd (PID: 123) to 0
+2026-04-03 21:23:54,584 - ModeOS - INFO - Reset priority for khugepaged (PID: 124) to 0
+2026-04-03 21:23:54,584 - ModeOS - INFO - Reset priority for kworker/R-kblockd (PID: 125) to 0
+2026-04-03 21:23:54,584 - ModeOS - INFO - Reset priority for kworker/R-blkcg_punt_bio (PID: 126) to 0
+2026-04-03 21:23:54,584 - ModeOS - INFO - Reset priority for kworker/R-kintegrityd (PID: 127) to 0
+2026-04-03 21:23:54,584 - ModeOS - INFO - Reset priority for kworker/R-tpm_dev_wq (PID: 132) to 0
+2026-04-03 21:23:54,585 - ModeOS - INFO - Reset priority for kworker/R-ata_sff (PID: 133) to 0
+2026-04-03 21:23:54,585 - ModeOS - INFO - Reset priority for kworker/R-md (PID: 134) to 0
+2026-04-03 21:23:54,585 - ModeOS - INFO - Reset priority for kworker/R-md_bitmap (PID: 135) to 0
+2026-04-03 21:23:54,585 - ModeOS - INFO - Reset priority for kworker/R-edac-poller (PID: 136) to 0
+2026-04-03 21:23:54,585 - ModeOS - INFO - Reset priority for kworker/R-devfreq_wq (PID: 137) to 0
+2026-04-03 21:23:54,586 - ModeOS - INFO - Reset priority for kworker/R-quota_events_unbound (PID: 139) to 0
+2026-04-03 21:23:54,586 - ModeOS - INFO - Reset priority for kworker/4:1H-kblockd (PID: 140) to 0
+2026-04-03 21:23:54,586 - ModeOS - INFO - Reset priority for kworker/R-kthrotld (PID: 144) to 0
+2026-04-03 21:23:54,587 - ModeOS - INFO - Reset priority for kworker/R-acpi_thermal_pm (PID: 153) to 0
+2026-04-03 21:23:54,587 - ModeOS - INFO - Reset priority for kworker/R-mld (PID: 155) to 0
+2026-04-03 21:23:54,587 - ModeOS - INFO - Reset priority for kworker/R-ipv6_addrconf (PID: 156) to 0
+2026-04-03 21:23:54,587 - ModeOS - INFO - Reset priority for kworker/R-kstrp (PID: 157) to 0
+2026-04-03 21:23:54,587 - ModeOS - INFO - Reset priority for kworker/R-charger_manager (PID: 179) to 0
+2026-04-03 21:23:54,588 - ModeOS - INFO - Reset priority for kworker/0:1H-kblockd (PID: 181) to 0
+2026-04-03 21:23:54,589 - ModeOS - INFO - Reset priority for kworker/14:1H-kblockd (PID: 223) to 0
+2026-04-03 21:23:54,589 - ModeOS - INFO - Reset priority for kworker/6:1H-kblockd (PID: 226) to 0
+2026-04-03 21:23:54,589 - ModeOS - INFO - Reset priority for kworker/7:1H-kblockd (PID: 248) to 0
+2026-04-03 21:23:54,589 - ModeOS - INFO - Reset priority for kworker/11:1H-kblockd (PID: 251) to 0
+2026-04-03 21:23:54,589 - ModeOS - INFO - Reset priority for kworker/1:1H-kblockd (PID: 253) to 0
+2026-04-03 21:23:54,590 - ModeOS - INFO - Reset priority for kworker/8:1H-kblockd (PID: 254) to 0
+2026-04-03 21:23:54,590 - ModeOS - INFO - Reset priority for kworker/10:1H-kblockd (PID: 255) to 0
+2026-04-03 21:23:54,590 - ModeOS - INFO - Reset priority for kworker/12:1H-kblockd (PID: 256) to 0
+2026-04-03 21:23:54,590 - ModeOS - INFO - Reset priority for kworker/2:1H-kblockd (PID: 259) to 0
+2026-04-03 21:23:54,590 - ModeOS - INFO - Reset priority for kworker/15:1H (PID: 260) to 0
+2026-04-03 21:23:54,591 - ModeOS - INFO - Reset priority for kworker/3:1H-kblockd (PID: 264) to 0
+2026-04-03 21:23:54,591 - ModeOS - INFO - Reset priority for kworker/5:1H-kblockd (PID: 265) to 0
+2026-04-03 21:23:54,591 - ModeOS - INFO - Reset priority for kworker/13:1H-kblockd (PID: 268) to 0
+2026-04-03 21:23:54,591 - ModeOS - INFO - Reset priority for kworker/9:1H-kblockd (PID: 270) to 0
+2026-04-03 21:23:54,591 - ModeOS - INFO - Reset priority for kworker/R-nvme-wq (PID: 303) to 0
+2026-04-03 21:23:54,591 - ModeOS - INFO - Reset priority for kworker/R-nvme-reset-wq (PID: 307) to 0
+2026-04-03 21:23:54,592 - ModeOS - INFO - Reset priority for kworker/R-nvme-delete-wq (PID: 313) to 0
+2026-04-03 21:23:54,592 - ModeOS - INFO - Reset priority for kworker/R-nvme-auth-wq (PID: 328) to 0
+2026-04-03 21:23:54,592 - ModeOS - INFO - Reset priority for kworker/R-sdhci (PID: 337) to 0
+2026-04-03 21:23:54,592 - ModeOS - INFO - Reset priority for kworker/R-USBC000:00-con1 (PID: 343) to 0
+2026-04-03 21:23:54,592 - ModeOS - INFO - Reset priority for kworker/R-USBC000:00-con2 (PID: 344) to 0
+2026-04-03 21:23:54,592 - ModeOS - INFO - Reset priority for kworker/R-ext4-rsv-conversion (PID: 382) to 0
+2026-04-03 21:23:54,593 - ModeOS - INFO - Reset priority for systemd-journald (PID: 432) to 0
+2026-04-03 21:23:54,593 - ModeOS - INFO - Reset priority for kworker/R-cfg80211 (PID: 678) to 0
+2026-04-03 21:23:54,593 - ModeOS - INFO - Reset priority for kworker/R-led_workqueue (PID: 703) to 0
+2026-04-03 21:23:54,594 - ModeOS - INFO - Reset priority for kworker/R-amdgpu-reset-dev (PID: 809) to 0
+2026-04-03 21:23:54,594 - ModeOS - INFO - Reset priority for kworker/R-ttm (PID: 940) to 0
+2026-04-03 21:23:54,595 - ModeOS - INFO - Reset priority for kworker/R-amdgpu_dm_hpd_rx_offload_wq (PID: 1186) to 0
+2026-04-03 21:23:54,595 - ModeOS - INFO - Reset priority for kworker/R-amdgpu_dm_hpd_rx_offload_wq (PID: 1187) to 0
+2026-04-03 21:23:54,595 - ModeOS - INFO - Reset priority for kworker/R-amdgpu_dm_hpd_rx_offload_wq (PID: 1189) to 0
+2026-04-03 21:23:54,595 - ModeOS - INFO - Reset priority for kworker/R-amdgpu_dm_hpd_rx_offload_wq (PID: 1190) to 0
+2026-04-03 21:23:54,595 - ModeOS - INFO - Reset priority for kworker/R-amdgpu_dm_hpd_rx_offload_wq (PID: 1191) to 0
+2026-04-03 21:23:54,596 - ModeOS - INFO - Reset priority for kworker/R-amdgpu_dm_hpd_rx_offload_wq (PID: 1192) to 0
+2026-04-03 21:23:54,596 - ModeOS - INFO - Reset priority for kworker/R-amdgpu_dm_hpd_rx_offload_wq (PID: 1193) to 0
+2026-04-03 21:23:54,596 - ModeOS - INFO - Reset priority for kworker/R-amdgpu_dm_hpd_rx_offload_wq (PID: 1194) to 0
+2026-04-03 21:23:54,596 - ModeOS - INFO - Reset priority for kworker/R-amdgpu_dm_hpd_rx_offload_wq (PID: 1195) to 0
+2026-04-03 21:23:54,596 - ModeOS - INFO - Reset priority for kworker/R-amdgpu_dm_hpd_rx_offload_wq (PID: 1196) to 0
+2026-04-03 21:23:54,596 - ModeOS - INFO - Reset priority for kworker/R-dm_vblank_control_workqueue (PID: 1197) to 0
+2026-04-03 21:23:54,597 - ModeOS - INFO - Reset priority for kworker/R-amdgpu_dm_hpd_wq (PID: 1198) to 0
+2026-04-03 21:23:54,598 - ModeOS - INFO - Reset priority for kworker/R-gfx_0.0.0 (PID: 1328) to 0
+2026-04-03 21:23:54,599 - ModeOS - INFO - Reset priority for kworker/R-gfx_0.1.0 (PID: 1330) to 0
+2026-04-03 21:23:54,599 - ModeOS - INFO - Reset priority for kworker/R-comp_1.0.0 (PID: 1331) to 0
+2026-04-03 21:23:54,599 - ModeOS - INFO - Reset priority for kworker/R-comp_1.1.0 (PID: 1332) to 0
+2026-04-03 21:23:54,599 - ModeOS - INFO - Reset priority for kworker/R-comp_1.2.0 (PID: 1333) to 0
+2026-04-03 21:23:54,599 - ModeOS - INFO - Reset priority for kworker/R-comp_1.3.0 (PID: 1334) to 0
+2026-04-03 21:23:54,599 - ModeOS - INFO - Reset priority for kworker/R-comp_1.0.1 (PID: 1335) to 0
+2026-04-03 21:23:54,599 - ModeOS - INFO - Reset priority for kworker/R-comp_1.1.1 (PID: 1336) to 0
+2026-04-03 21:23:54,600 - ModeOS - INFO - Reset priority for kworker/R-comp_1.2.1 (PID: 1337) to 0
+2026-04-03 21:23:54,600 - ModeOS - INFO - Reset priority for kworker/R-comp_1.3.1 (PID: 1338) to 0
+2026-04-03 21:23:54,600 - ModeOS - INFO - Reset priority for kworker/R-sdma0 (PID: 1339) to 0
+2026-04-03 21:23:54,600 - ModeOS - INFO - Reset priority for kworker/R-vcn_dec_0 (PID: 1340) to 0
+2026-04-03 21:23:54,600 - ModeOS - INFO - Reset priority for kworker/R-vcn_enc_0.0 (PID: 1341) to 0
+2026-04-03 21:23:54,600 - ModeOS - INFO - Reset priority for kworker/R-vcn_enc_0.1 (PID: 1342) to 0
+2026-04-03 21:23:54,601 - ModeOS - INFO - Reset priority for kworker/R-jpeg_dec (PID: 1343) to 0
+2026-04-03 21:23:54,601 - ModeOS - INFO - Reset priority for krfcommd (PID: 2014) to 0
+2026-04-03 21:23:54,612 - ModeOS - INFO - Reset priority for kworker/u65:5-ttm (PID: 32432) to 0
+2026-04-03 21:23:54,613 - ModeOS - INFO - Reset priority for kworker/u65:0-ttm (PID: 36027) to 0
+2026-04-03 21:23:54,614 - ModeOS - INFO - Reset priority for kworker/u65:2-ttm (PID: 36389) to 0
+2026-04-03 21:23:54,614 - ModeOS - INFO - Reset priority for kworker/u65:3-ttm (PID: 36468) to 0
+2026-04-03 21:23:54,614 - ModeOS - INFO - Reset priority for kworker/u65:4-ttm (PID: 37180) to 0
+2026-04-03 21:23:54,615 - ModeOS - INFO - Reset priority for kworker/u65:6-ttm (PID: 37432) to 0
+2026-04-03 21:23:54,616 - ModeOS - INFO - Reset priority for kworker/u65:8-ttm (PID: 38112) to 0
+2026-04-03 21:23:54,617 - ModeOS - INFO - Reset priority for kworker/u65:9-ttm (PID: 38113) to 0
+2026-04-03 21:23:54,617 - ModeOS - INFO - Reset priority for kworker/u65:10-ttm (PID: 38114) to 0
+2026-04-03 21:23:54,617 - ModeOS - INFO - Reset priority for kworker/u65:11-ttm (PID: 38115) to 0
+2026-04-03 21:23:54,617 - ModeOS - INFO - Reset priority for kworker/u65:12-ttm (PID: 38116) to 0
+2026-04-03 21:23:54,617 - ModeOS - INFO - Reset priority for kworker/u65:13-ttm (PID: 38117) to 0
+2026-04-03 21:23:54,618 - ModeOS - INFO - Reset priority for kworker/u65:14-ttm (PID: 38118) to 0
+2026-04-03 21:23:54,622 - ModeOS - INFO - === System Reset Successfully ===
+2026-04-03 21:32:13,426 - ModeOS - INFO - Saving current system state...
+2026-04-03 21:32:13,461 - ModeOS - INFO - State saved correctly: {'volume': 100, 'brightness': 0, 'night_light': False}
+2026-04-03 21:32:13,461 - ModeOS - INFO - === Activating 'DEEP_WORK' Mode ===
+2026-04-03 21:32:13,999 - ModeOS - INFO - Killing all user processes except allowed ones...
+2026-04-03 21:32:14,075 - ModeOS - INFO - Target app 'code' (exec: 'code') is not currently running to adjust priority.
+2026-04-03 21:32:14,075 - ModeOS - INFO - Target app 'terminal' (exec: 'gnome-terminal') is not currently running to adjust priority.
+2026-04-03 21:32:14,075 - ModeOS - INFO - Global CPU prioritization adjusting toward mode limit (100%)
+2026-04-03 21:32:14,575 - ModeOS - INFO - 
+--- System Stats Comparison ---
+2026-04-03 21:32:14,576 - ModeOS - INFO - CPU Usage:    8.0% -> 8.6%
+2026-04-03 21:32:14,576 - ModeOS - INFO - Memory Usage: 72.0% -> 72.1%
+2026-04-03 21:32:14,576 - ModeOS - INFO - -------------------------------
+
+2026-04-03 21:32:14,576 - ModeOS - INFO - === 'DEEP_WORK' Mode Activated Successfully ===
+2026-04-03 21:32:21,498 - ModeOS - INFO - === Resetting System to Default State ===
+2026-04-03 21:32:21,544 - ModeOS - INFO - Resetting all user process priorities to 0...
+2026-04-03 21:32:21,585 - ModeOS - INFO - Reset priority for kworker/u65:1-ttm (PID: 41497) to 0
+2026-04-03 21:32:21,586 - ModeOS - INFO - Reset priority for kworker/u65:0-ttm (PID: 41760) to 0
+2026-04-03 21:32:21,586 - ModeOS - INFO - Reset priority for kworker/u65:3-ttm (PID: 41761) to 0
+2026-04-03 21:32:21,586 - ModeOS - INFO - Reset priority for kworker/u65:5-ttm (PID: 41762) to 0
+2026-04-03 21:32:21,587 - ModeOS - INFO - Reset priority for kworker/u65:7-ttm (PID: 41763) to 0
+2026-04-03 21:32:21,587 - ModeOS - INFO - Reset priority for kworker/u65:9-ttm (PID: 41764) to 0
+2026-04-03 21:32:21,587 - ModeOS - INFO - Reset priority for kworker/u65:11-ttm (PID: 41765) to 0
+2026-04-03 21:32:21,587 - ModeOS - INFO - Reset priority for kworker/u65:12-ttm (PID: 41766) to 0
+2026-04-03 21:32:21,587 - ModeOS - INFO - Reset priority for kworker/u65:13-ttm (PID: 41767) to 0
+2026-04-03 21:32:21,587 - ModeOS - INFO - Reset priority for kworker/u65:14-ttm (PID: 41768) to 0
+2026-04-03 21:32:21,588 - ModeOS - INFO - Reset priority for kworker/u65:15 (PID: 41769) to 0
+2026-04-03 21:32:21,588 - ModeOS - INFO - === System Reset Successfully ===
+2026-04-03 21:40:21,675 - ModeOS - INFO - Saving current system state...
+2026-04-03 21:40:21,714 - ModeOS - WARNING - Failed to save state: [Errno 13] Permission denied: '/home/praneeth/Downloads/moodOS/modeos/data/last_state.json'
+2026-04-03 21:40:21,714 - ModeOS - INFO - === Activating 'READING' Mode ===
+2026-04-03 21:40:22,217 - ModeOS - INFO - [INFO] Setting brightness -> 30%
+2026-04-03 21:40:24,396 - ModeOS - WARNING - [WARN] Brightness unverified (Expected: 30%, Got: 14%). Retrying once...
+2026-04-03 21:40:24,922 - ModeOS - ERROR - [ERROR] Failed to set brightness after retry.
+2026-04-03 21:40:24,922 - ModeOS - INFO - [INFO] Setting volume -> 0%
+2026-04-03 21:40:25,441 - ModeOS - INFO - [OK] Volume verified at 0%
+2026-04-03 21:40:25,441 - ModeOS - INFO - [INFO] Setting night light -> ON
+2026-04-03 21:40:26,492 - ModeOS - WARNING - [WARN] Night light unverified (Expected: True, Got: False). Retrying once...
+2026-04-03 21:40:27,544 - ModeOS - ERROR - [ERROR] Failed to set night light after retry.
+2026-04-03 21:40:27,582 - ModeOS - INFO - Target app 'discord' (exec: 'discord') is not currently running.
+2026-04-03 21:40:27,582 - ModeOS - INFO - Target app 'steam' (exec: 'steam') is not currently running.
+2026-04-03 21:40:27,582 - ModeOS - INFO - Target app 'vlc' (exec: 'vlc') is not currently running.
+2026-04-03 21:40:27,621 - ModeOS - INFO - Target app 'chrome' (exec: 'chrome') is not currently running to adjust priority.
+2026-04-03 21:40:27,621 - ModeOS - INFO - Global CPU prioritization adjusting toward mode limit (30%)
+2026-04-03 21:40:28,122 - ModeOS - INFO - 
+--- System Stats Comparison ---
+2026-04-03 21:40:28,123 - ModeOS - INFO - CPU Usage:    1.1% -> 3.6%
+2026-04-03 21:40:28,123 - ModeOS - INFO - Memory Usage: 74.2% -> 72.7%
+2026-04-03 21:40:28,123 - ModeOS - INFO - -------------------------------
+
+2026-04-03 21:40:28,123 - ModeOS - INFO - === 'READING' Mode Activated Successfully ===
+2026-04-03 21:41:20,851 - ModeOS - INFO - Restoring previous system state...
+2026-04-03 21:41:20,851 - ModeOS - INFO - [INFO] Setting volume -> 100%
+2026-04-03 21:41:21,370 - ModeOS - INFO - [OK] Volume verified at 100%
+2026-04-03 21:41:21,370 - ModeOS - INFO - [INFO] Setting brightness -> 0%
+2026-04-03 21:41:23,541 - ModeOS - WARNING - [WARN] Brightness unverified (Expected: 0%, Got: 25%). Retrying once...
+2026-04-03 21:41:24,060 - ModeOS - ERROR - [ERROR] Failed to set brightness after retry.
+2026-04-03 21:41:24,061 - ModeOS - INFO - [INFO] Setting night light -> OFF
+2026-04-03 21:41:25,126 - ModeOS - INFO - [OK] Night light verified (OFF)
+2026-04-03 21:41:25,126 - ModeOS - INFO - System restored successfully
+2026-04-03 21:48:41,159 - ModeOS - INFO - Restoring previous system state...
+2026-04-03 21:48:41,159 - ModeOS - INFO - [INFO] Setting volume -> 100%
+2026-04-03 21:48:41,676 - ModeOS - INFO - [OK] Volume verified at 100%
+2026-04-03 21:48:41,676 - ModeOS - INFO - [INFO] Setting brightness -> 30%
+2026-04-03 21:48:43,845 - ModeOS - INFO - [OK] Brightness verified at 25%
+2026-04-03 21:48:43,845 - ModeOS - INFO - [INFO] Setting night light -> OFF
+2026-04-03 21:48:44,910 - ModeOS - INFO - [OK] Night light verified (OFF)
+2026-04-03 21:48:44,910 - ModeOS - INFO - System restored successfully
+2026-04-03 21:51:26,904 - ModeOS - INFO - === Running System Health Check ===
+2026-04-03 21:51:26,904 - ModeOS - INFO - [WARN] pactl not installed
+2026-04-03 21:51:26,904 - ModeOS - INFO - [OK] amixer found
+2026-04-03 21:51:26,904 - ModeOS - INFO - [OK] brightnessctl found
+2026-04-03 21:51:26,904 - ModeOS - INFO - [OK] xrandr found
+2026-04-03 21:51:26,904 - ModeOS - INFO - [OK] redshift found
+2026-04-03 21:51:26,904 - ModeOS - INFO - === Health Check Complete ===
+2026-04-03 21:51:44,438 - ModeOS - INFO - Saving current system state...
+2026-04-03 21:51:44,476 - ModeOS - WARNING - Failed to save state: [Errno 13] Permission denied: '/home/praneeth/Downloads/moodOS/modeos/data/last_state.json'
+2026-04-03 21:51:44,476 - ModeOS - INFO - === Activating 'READING' Mode ===
+2026-04-03 21:51:44,977 - ModeOS - INFO - [INFO] Setting brightness -> 30%
+2026-04-03 21:51:47,155 - ModeOS - INFO - [OK] Brightness verified at 25%
+2026-04-03 21:51:47,155 - ModeOS - INFO - [INFO] Setting volume -> 0%
+2026-04-03 21:51:47,672 - ModeOS - INFO - [OK] Volume verified at 0%
+2026-04-03 21:51:47,672 - ModeOS - INFO - [INFO] Setting night light -> ON
+2026-04-03 21:51:48,725 - ModeOS - WARNING - [WARN] Night light unverified (Expected: True, Got: False). Retrying once...
+2026-04-03 21:51:49,781 - ModeOS - ERROR - [ERROR] Failed to set night light after retry.
+2026-04-03 21:51:49,823 - ModeOS - INFO - Target app 'discord' (exec: 'discord') is not currently running.
+2026-04-03 21:51:49,823 - ModeOS - INFO - Target app 'steam' (exec: 'steam') is not currently running.
+2026-04-03 21:51:49,823 - ModeOS - INFO - Target app 'vlc' (exec: 'vlc') is not currently running.
+2026-04-03 21:51:49,867 - ModeOS - INFO - Target app 'chrome' (exec: 'chrome') is not currently running to adjust priority.
+2026-04-03 21:51:49,867 - ModeOS - INFO - Global CPU prioritization adjusting toward mode limit (30%)
+2026-04-03 21:51:50,368 - ModeOS - INFO - 
+--- System Stats Comparison ---
+2026-04-03 21:51:50,368 - ModeOS - INFO - CPU Usage:    1.5% -> 5.4%
+2026-04-03 21:51:50,368 - ModeOS - INFO - Memory Usage: 74.4% -> 72.6%
+2026-04-03 21:51:50,368 - ModeOS - INFO - -------------------------------
+
+2026-04-03 21:51:50,369 - ModeOS - INFO - === 'READING' Mode Activated Successfully ===
+2026-04-03 21:52:01,800 - ModeOS - INFO - Restoring previous system state...
+2026-04-03 21:52:01,800 - ModeOS - INFO - [INFO] Setting volume -> 100%
+2026-04-03 21:52:02,325 - ModeOS - INFO - [OK] Volume verified at 100%
+2026-04-03 21:52:02,325 - ModeOS - INFO - [INFO] Setting brightness -> 100%
+2026-04-03 21:52:02,851 - ModeOS - WARNING - [WARN] Brightness unverified (Expected: 100%, Got: 25%). Retrying once...
+2026-04-03 21:52:03,378 - ModeOS - ERROR - [ERROR] Failed to set brightness after retry.
+2026-04-03 21:52:03,378 - ModeOS - INFO - [INFO] Setting night light -> OFF
+2026-04-03 21:52:04,450 - ModeOS - INFO - [OK] Night light verified (OFF)
+2026-04-03 21:52:04,450 - ModeOS - INFO - System restored successfully
+2026-04-03 21:52:44,195 - ModeOS - INFO - Saving current system state...
+2026-04-03 21:52:44,235 - ModeOS - WARNING - Failed to save state: [Errno 13] Permission denied: '/home/praneeth/Downloads/moodOS/modeos/data/last_state.json'
+2026-04-03 21:52:44,235 - ModeOS - INFO - === Activating 'READING' Mode ===
+2026-04-03 21:52:44,737 - ModeOS - INFO - [INFO] Setting brightness -> 30%
+2026-04-03 21:52:46,917 - ModeOS - INFO - [OK] Brightness verified at 25%
+2026-04-03 21:52:46,917 - ModeOS - INFO - [INFO] Setting volume -> 0%
+2026-04-03 21:52:47,436 - ModeOS - INFO - [OK] Volume verified at 0%
+2026-04-03 21:52:47,436 - ModeOS - INFO - [INFO] Setting night light -> ON
+2026-04-03 21:52:48,488 - ModeOS - WARNING - [WARN] Night light unverified (Expected: True, Got: False). Retrying once...
+2026-04-03 21:52:49,544 - ModeOS - ERROR - [ERROR] Failed to set night light after retry.
+2026-04-03 21:52:49,583 - ModeOS - INFO - Target app 'discord' (exec: 'discord') is not currently running.
+2026-04-03 21:52:49,583 - ModeOS - INFO - Target app 'steam' (exec: 'steam') is not currently running.
+2026-04-03 21:52:49,583 - ModeOS - INFO - Target app 'vlc' (exec: 'vlc') is not currently running.
+2026-04-03 21:52:49,624 - ModeOS - INFO - Target app 'chrome' (exec: 'chrome') is not currently running to adjust priority.
+2026-04-03 21:52:49,625 - ModeOS - INFO - Global CPU prioritization adjusting toward mode limit (30%)
+2026-04-03 21:52:50,125 - ModeOS - INFO - 
+--- System Stats Comparison ---
+2026-04-03 21:52:50,125 - ModeOS - INFO - CPU Usage:    0.9% -> 1.5%
+2026-04-03 21:52:50,125 - ModeOS - INFO - Memory Usage: 74.6% -> 72.7%
+2026-04-03 21:52:50,126 - ModeOS - INFO - -------------------------------
+
+2026-04-03 21:52:50,126 - ModeOS - INFO - === 'READING' Mode Activated Successfully ===
+2026-04-03 21:53:04,632 - ModeOS - INFO - Restoring previous system state...
+2026-04-03 21:53:04,632 - ModeOS - INFO - [INFO] Setting volume -> 100%
+2026-04-03 21:53:05,151 - ModeOS - INFO - [OK] Volume verified at 100%
+2026-04-03 21:53:05,151 - ModeOS - INFO - [INFO] Setting brightness -> 100%
+2026-04-03 21:53:05,675 - ModeOS - WARNING - [WARN] Brightness unverified (Expected: 100%, Got: 25%). Retrying once...
+2026-04-03 21:53:06,208 - ModeOS - ERROR - [ERROR] Failed to set brightness after retry.
+2026-04-03 21:53:06,208 - ModeOS - INFO - [INFO] Setting night light -> OFF
+2026-04-03 21:53:07,281 - ModeOS - INFO - [OK] Night light verified (OFF)
+2026-04-03 21:53:07,281 - ModeOS - INFO - System restored successfully
+2026-04-03 22:05:58,942 - ModeOS - INFO - === Running System Health Check ===
+2026-04-03 22:05:58,942 - ModeOS - INFO - [WARN] pactl not installed
+2026-04-03 22:05:58,942 - ModeOS - INFO - [OK] amixer found
+2026-04-03 22:05:58,942 - ModeOS - INFO - [OK] brightnessctl found
+2026-04-03 22:05:58,942 - ModeOS - INFO - [OK] xrandr found
+2026-04-03 22:05:58,942 - ModeOS - INFO - [OK] redshift found
+2026-04-03 22:05:58,942 - ModeOS - INFO - === Health Check Complete ===
+2026-04-03 22:06:09,199 - ModeOS - INFO - Saving current system state...
+2026-04-03 22:06:09,199 - ModeOS - WARNING - [WARN] Running without sudo after previous sudo run. This may cause permission conflicts.
+2026-04-03 22:06:09,199 - ModeOS - WARNING - [WARN] Permission issue detected. Attempting fix on /home/praneeth/Downloads/moodOS/modeos/data/last_state.json...
+2026-04-03 22:06:09,199 - ModeOS - WARNING - [WARN] Failed to change permissions on /home/praneeth/Downloads/moodOS/modeos/data/last_state.json: [Errno 1] Operation not permitted: '/home/praneeth/Downloads/moodOS/modeos/data/last_state.json'
+2026-04-03 22:06:09,237 - ModeOS - WARNING - [WARN] Permission denied writing to /home/praneeth/Downloads/moodOS/modeos/data/last_state.json. Attempting to fix...
+2026-04-03 22:06:09,238 - ModeOS - WARNING - [WARN] Running without sudo after previous sudo run. This may cause permission conflicts.
+2026-04-03 22:06:09,238 - ModeOS - WARNING - [WARN] Permission issue detected. Attempting fix on /home/praneeth/Downloads/moodOS/modeos/data/last_state.json...
+2026-04-03 22:06:09,238 - ModeOS - WARNING - [WARN] Failed to change permissions on /home/praneeth/Downloads/moodOS/modeos/data/last_state.json: [Errno 1] Operation not permitted: '/home/praneeth/Downloads/moodOS/modeos/data/last_state.json'
+2026-04-03 22:06:09,238 - ModeOS - WARNING - [WARN] Permission denied writing to /home/praneeth/Downloads/moodOS/modeos/data/last_state.json. Attempting to fix...
+2026-04-03 22:06:09,238 - ModeOS - WARNING - [WARN] Running without sudo after previous sudo run. This may cause permission conflicts.
+2026-04-03 22:06:09,238 - ModeOS - WARNING - [WARN] Permission issue detected. Attempting fix on /home/praneeth/Downloads/moodOS/modeos/data/last_state.json...
+2026-04-03 22:06:09,238 - ModeOS - WARNING - [WARN] Failed to change permissions on /home/praneeth/Downloads/moodOS/modeos/data/last_state.json: [Errno 1] Operation not permitted: '/home/praneeth/Downloads/moodOS/modeos/data/last_state.json'
+2026-04-03 22:06:09,239 - ModeOS - WARNING - [WARN] Could not write to /home/praneeth/Downloads/moodOS/modeos/data/last_state.json. Falling back to /tmp/modeos_last_state.json
+2026-04-03 22:06:09,239 - ModeOS - INFO - State saved to fallback: /tmp/modeos_last_state.json
+2026-04-03 22:06:09,239 - ModeOS - INFO - === Activating 'READING' Mode ===
+2026-04-03 22:06:09,740 - ModeOS - INFO - [INFO] Setting brightness -> 30%
+2026-04-03 22:06:11,918 - ModeOS - INFO - [OK] Brightness verified at 25%
+2026-04-03 22:06:11,918 - ModeOS - INFO - [INFO] Setting volume -> 0%
+2026-04-03 22:06:12,436 - ModeOS - INFO - [OK] Volume verified at 0%
+2026-04-03 22:06:12,436 - ModeOS - INFO - [INFO] Setting night light -> ON
+2026-04-03 22:06:13,491 - ModeOS - WARNING - [WARN] Night light unverified (Expected: True, Got: False). Retrying once...
+2026-04-03 22:06:14,543 - ModeOS - ERROR - [ERROR] Failed to set night light after retry.
+2026-04-03 22:06:14,587 - ModeOS - INFO - Target app 'discord' (exec: 'discord') is not currently running.
+2026-04-03 22:06:14,587 - ModeOS - INFO - Target app 'steam' (exec: 'steam') is not currently running.
+2026-04-03 22:06:14,587 - ModeOS - INFO - Target app 'vlc' (exec: 'vlc') is not currently running.
+2026-04-03 22:06:14,628 - ModeOS - INFO - Target app 'chrome' (exec: 'chrome') is not currently running to adjust priority.
+2026-04-03 22:06:14,628 - ModeOS - INFO - Global CPU prioritization adjusting toward mode limit (30%)
+2026-04-03 22:06:15,129 - ModeOS - INFO - 
+--- System Stats Comparison ---
+2026-04-03 22:06:15,129 - ModeOS - INFO - CPU Usage:    1.0% -> 3.5%
+2026-04-03 22:06:15,129 - ModeOS - INFO - Memory Usage: 74.7% -> 73.0%
+2026-04-03 22:06:15,129 - ModeOS - INFO - -------------------------------
+
+2026-04-03 22:06:15,129 - ModeOS - INFO - === 'READING' Mode Activated Successfully ===
+2026-04-03 22:06:37,349 - ModeOS - INFO - Restoring previous system state...
+2026-04-03 22:06:37,350 - ModeOS - INFO - [INFO] Setting volume -> 100%
+2026-04-03 22:06:37,870 - ModeOS - INFO - [OK] Volume verified at 100%
+2026-04-03 22:06:37,870 - ModeOS - INFO - [INFO] Setting brightness -> 100%
+2026-04-03 22:06:40,056 - ModeOS - WARNING - [WARN] Brightness unverified (Expected: 100%, Got: 25%). Retrying once...
+2026-04-03 22:06:40,584 - ModeOS - ERROR - [ERROR] Failed to set brightness after retry.
+2026-04-03 22:06:40,584 - ModeOS - INFO - [INFO] Setting night light -> OFF
+2026-04-03 22:06:41,657 - ModeOS - INFO - [OK] Night light verified (OFF)
+2026-04-03 22:06:41,657 - ModeOS - INFO - System restored successfully
+2026-04-03 22:06:58,218 - ModeOS - INFO - Saving current system state...
+2026-04-03 22:06:58,256 - ModeOS - INFO - State saved correctly: {'volume': None, 'brightness': 25, 'night_light': False}
+2026-04-03 22:06:58,256 - ModeOS - INFO - === Activating 'READING' Mode ===
+2026-04-03 22:06:58,757 - ModeOS - INFO - [INFO] Setting brightness -> 30%
+2026-04-03 22:06:59,263 - ModeOS - INFO - [OK] Brightness verified at 30%
+2026-04-03 22:06:59,263 - ModeOS - INFO - [INFO] Setting volume -> 0%
+2026-04-03 22:06:59,270 - ModeOS - WARNING - [volume.sh] failed with stderr: amixer: Mixer attach default error: Host is down
+2026-04-03 22:06:59,270 - ModeOS - ERROR - [ERROR] Volume script failed completely.
+2026-04-03 22:06:59,270 - ModeOS - INFO - [INFO] Setting night light -> ON
+2026-04-03 22:07:00,325 - ModeOS - WARNING - [WARN] Night light unverified (Expected: True, Got: False). Retrying once...
+2026-04-03 22:07:01,378 - ModeOS - ERROR - [ERROR] Failed to set night light after retry.
+2026-04-03 22:07:01,417 - ModeOS - INFO - Target app 'discord' (exec: 'discord') is not currently running.
+2026-04-03 22:07:01,417 - ModeOS - INFO - Target app 'steam' (exec: 'steam') is not currently running.
+2026-04-03 22:07:01,417 - ModeOS - INFO - Target app 'vlc' (exec: 'vlc') is not currently running.
+2026-04-03 22:07:01,456 - ModeOS - INFO - Target app 'chrome' (exec: 'chrome') is not currently running to adjust priority.
+2026-04-03 22:07:01,457 - ModeOS - INFO - Global CPU prioritization adjusting toward mode limit (30%)
+2026-04-03 22:07:01,957 - ModeOS - INFO - 
+--- System Stats Comparison ---
+2026-04-03 22:07:01,957 - ModeOS - INFO - CPU Usage:    1.3% -> 1.8%
+2026-04-03 22:07:01,957 - ModeOS - INFO - Memory Usage: 73.4% -> 75.1%
+2026-04-03 22:07:01,957 - ModeOS - INFO - -------------------------------
+
+2026-04-03 22:07:01,957 - ModeOS - INFO - === 'READING' Mode Activated Successfully ===
+2026-04-03 22:07:32,211 - ModeOS - INFO - Restoring previous system state...
+2026-04-03 22:07:32,212 - ModeOS - INFO - [INFO] Setting brightness -> 25%
+2026-04-03 22:07:32,719 - ModeOS - INFO - [OK] Brightness verified at 25%
+2026-04-03 22:07:32,719 - ModeOS - INFO - [INFO] Setting night light -> OFF
+2026-04-03 22:07:33,776 - ModeOS - INFO - [OK] Night light verified (OFF)
+2026-04-03 22:07:33,776 - ModeOS - INFO - System restored successfully
+2026-04-03 22:08:20,728 - ModeOS - INFO - Saving current system state...
+2026-04-03 22:08:20,768 - ModeOS - INFO - State saved correctly: {'volume': None, 'brightness': 25, 'night_light': False}
+2026-04-03 22:08:20,768 - ModeOS - INFO - === Activating 'CODING' Mode ===
+2026-04-03 22:08:21,271 - ModeOS - INFO - [INFO] Setting brightness -> 60%
+2026-04-03 22:08:21,777 - ModeOS - INFO - [OK] Brightness verified at 60%
+2026-04-03 22:08:21,777 - ModeOS - INFO - [INFO] Setting volume -> 30%
+2026-04-03 22:08:21,783 - ModeOS - WARNING - [volume.sh] failed with stderr: amixer: Mixer attach default error: Host is down
+2026-04-03 22:08:21,783 - ModeOS - ERROR - [ERROR] Volume script failed completely.
+2026-04-03 22:08:21,783 - ModeOS - INFO - [INFO] Setting night light -> ON
+2026-04-03 22:08:22,842 - ModeOS - WARNING - [WARN] Night light unverified (Expected: True, Got: False). Retrying once...
+2026-04-03 22:08:23,893 - ModeOS - ERROR - [ERROR] Failed to set night light after retry.
+2026-04-03 22:08:23,932 - ModeOS - INFO - Target app 'code' (exec: 'code') is not currently running to adjust priority.
+2026-04-03 22:08:23,932 - ModeOS - INFO - Global CPU prioritization adjusting toward mode limit (100%)
+2026-04-03 22:08:24,432 - ModeOS - INFO - 
+--- System Stats Comparison ---
+2026-04-03 22:08:24,433 - ModeOS - INFO - CPU Usage:    7.0% -> 0.6%
+2026-04-03 22:08:24,433 - ModeOS - INFO - Memory Usage: 74.9% -> 74.9%
+2026-04-03 22:08:24,433 - ModeOS - INFO - -------------------------------
+
+2026-04-03 22:08:24,433 - ModeOS - INFO - === 'CODING' Mode Activated Successfully ===
+2026-04-03 22:09:00,263 - ModeOS - INFO - Restoring previous system state...
+2026-04-03 22:09:00,263 - ModeOS - INFO - [INFO] Setting brightness -> 25%
+2026-04-03 22:09:00,771 - ModeOS - INFO - [OK] Brightness verified at 25%
+2026-04-03 22:09:00,771 - ModeOS - INFO - [INFO] Setting night light -> OFF
+2026-04-03 22:09:01,831 - ModeOS - INFO - [OK] Night light verified (OFF)
+2026-04-03 22:09:01,831 - ModeOS - INFO - System restored successfully

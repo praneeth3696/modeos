@@ -1,0 +1,9 @@
+block_apps:
+allow_apps:
+boost_apps:
+reduce_apps:
+kill_all_except_allow: false
+brightness: 50
+volume: 50
+night_light: false
+cpu_limit: 50
