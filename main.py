@@ -46,6 +46,10 @@ def fix_permissions():
     log.info("=== Permission Fix Complete ===")
 
 def main():
+    import os
+    if os.geteuid() == 0:
+        log.warning("[WARN] Running as root detected! This may cause issues. Continuing anyway...")
+
     parser = argparse.ArgumentParser(description="ModeOS - Adaptive OS Mode Manager")
     subparsers = parser.add_subparsers(dest="command", required=True, help="Command to run")
     

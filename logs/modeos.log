@@ -407,3 +407,104 @@
 2026-04-03 22:09:00,771 - ModeOS - INFO - [INFO] Setting night light -> OFF
 2026-04-03 22:09:01,831 - ModeOS - INFO - [OK] Night light verified (OFF)
 2026-04-03 22:09:01,831 - ModeOS - INFO - System restored successfully
+2026-04-03 22:19:24,660 - ModeOS - INFO - === Running System Health Check ===
+2026-04-03 22:19:24,660 - ModeOS - INFO - [OK] pactl found
+2026-04-03 22:19:24,660 - ModeOS - INFO - [OK] amixer found
+2026-04-03 22:19:24,660 - ModeOS - INFO - [OK] brightnessctl found
+2026-04-03 22:19:24,660 - ModeOS - INFO - [OK] xrandr found
+2026-04-03 22:19:24,660 - ModeOS - INFO - [OK] redshift found
+2026-04-03 22:19:24,661 - ModeOS - INFO - === Health Check Complete ===
+2026-04-03 22:19:36,366 - ModeOS - INFO - Saving current system state...
+2026-04-03 22:19:36,406 - ModeOS - INFO - State saved correctly: {'volume': None, 'brightness': 0, 'night_light': False}
+2026-04-03 22:19:36,406 - ModeOS - INFO - === Activating 'READING' Mode ===
+2026-04-03 22:19:36,908 - ModeOS - INFO - [INFO] Setting brightness -> 30%
+2026-04-03 22:19:37,414 - ModeOS - INFO - [OK] Brightness verified at 30%
+2026-04-03 22:19:37,414 - ModeOS - INFO - [INFO] Setting volume -> 0%
+2026-04-03 22:19:37,425 - ModeOS - WARNING - [volume.sh] failed with stderr: Connection failure: Connection refused
+pa_context_connect() failed: Connection refused
+amixer: Mixer attach default error: Host is down
+2026-04-03 22:19:37,425 - ModeOS - ERROR - [ERROR] Volume script failed completely.
+2026-04-03 22:19:37,425 - ModeOS - INFO - [INFO] Setting night light -> ON
+2026-04-03 22:19:38,480 - ModeOS - WARNING - [WARN] Night light unverified (Expected: True, Got: False). Retrying once...
+2026-04-03 22:19:39,533 - ModeOS - ERROR - [ERROR] Failed to set night light after retry.
+2026-04-03 22:19:39,571 - ModeOS - INFO - Target app 'discord' (exec: 'discord') is not currently running.
+2026-04-03 22:19:39,571 - ModeOS - INFO - Target app 'steam' (exec: 'steam') is not currently running.
+2026-04-03 22:19:39,571 - ModeOS - INFO - Target app 'vlc' (exec: 'vlc') is not currently running.
+2026-04-03 22:19:39,609 - ModeOS - INFO - Target app 'chrome' (exec: 'chrome') is not currently running to adjust priority.
+2026-04-03 22:19:39,610 - ModeOS - INFO - Global CPU prioritization adjusting toward mode limit (30%)
+2026-04-03 22:19:40,110 - ModeOS - INFO - 
+--- System Stats Comparison ---
+2026-04-03 22:19:40,110 - ModeOS - INFO - CPU Usage:    2.0% -> 1.3%
+2026-04-03 22:19:40,110 - ModeOS - INFO - Memory Usage: 76.9% -> 76.9%
+2026-04-03 22:19:40,110 - ModeOS - INFO - -------------------------------
+
+2026-04-03 22:19:40,110 - ModeOS - INFO - === 'READING' Mode Activated Successfully ===
+2026-04-04 00:00:43,253 - ModeOS - INFO - Restoring previous system state...
+2026-04-04 00:00:43,253 - ModeOS - INFO - [INFO] Setting brightness -> 0%
+2026-04-04 00:00:45,423 - ModeOS - WARNING - [WARN] Brightness unverified (Expected: 0%, Got: 30%). Retrying once...
+2026-04-04 00:00:45,950 - ModeOS - ERROR - [ERROR] Failed to set brightness after retry.
+2026-04-04 00:00:45,950 - ModeOS - INFO - [INFO] Setting night light -> OFF
+2026-04-04 00:00:47,017 - ModeOS - INFO - [OK] Night light verified (OFF)
+2026-04-04 00:00:47,017 - ModeOS - INFO - System restored successfully
+2026-04-04 00:01:10,728 - ModeOS - INFO - Saving current system state...
+2026-04-04 00:01:10,728 - ModeOS - WARNING - [WARN] Running without sudo after previous sudo run. This may cause permission conflicts.
+2026-04-04 00:01:10,728 - ModeOS - WARNING - [WARN] Permission issue detected. Attempting fix on /home/praneeth/Downloads/moodOS/modeos/data/last_state.json...
+2026-04-04 00:01:10,728 - ModeOS - WARNING - [WARN] Failed to change permissions on /home/praneeth/Downloads/moodOS/modeos/data/last_state.json: [Errno 1] Operation not permitted: '/home/praneeth/Downloads/moodOS/modeos/data/last_state.json'
+2026-04-04 00:01:10,768 - ModeOS - WARNING - [WARN] Permission denied writing to /home/praneeth/Downloads/moodOS/modeos/data/last_state.json. Attempting to fix...
+2026-04-04 00:01:10,768 - ModeOS - WARNING - [WARN] Running without sudo after previous sudo run. This may cause permission conflicts.
+2026-04-04 00:01:10,768 - ModeOS - WARNING - [WARN] Permission issue detected. Attempting fix on /home/praneeth/Downloads/moodOS/modeos/data/last_state.json...
+2026-04-04 00:01:10,768 - ModeOS - WARNING - [WARN] Failed to change permissions on /home/praneeth/Downloads/moodOS/modeos/data/last_state.json: [Errno 1] Operation not permitted: '/home/praneeth/Downloads/moodOS/modeos/data/last_state.json'
+2026-04-04 00:01:10,768 - ModeOS - WARNING - [WARN] Permission denied writing to /home/praneeth/Downloads/moodOS/modeos/data/last_state.json. Attempting to fix...
+2026-04-04 00:01:10,768 - ModeOS - WARNING - [WARN] Running without sudo after previous sudo run. This may cause permission conflicts.
+2026-04-04 00:01:10,768 - ModeOS - WARNING - [WARN] Permission issue detected. Attempting fix on /home/praneeth/Downloads/moodOS/modeos/data/last_state.json...
+2026-04-04 00:01:10,768 - ModeOS - WARNING - [WARN] Failed to change permissions on /home/praneeth/Downloads/moodOS/modeos/data/last_state.json: [Errno 1] Operation not permitted: '/home/praneeth/Downloads/moodOS/modeos/data/last_state.json'
+2026-04-04 00:01:10,769 - ModeOS - WARNING - [WARN] Could not write to /home/praneeth/Downloads/moodOS/modeos/data/last_state.json. Falling back to /tmp/modeos_last_state.json
+2026-04-04 00:01:10,770 - ModeOS - INFO - State saved to fallback: /tmp/modeos_last_state.json
+2026-04-04 00:01:10,770 - ModeOS - INFO - === Activating 'MUSIC' Mode ===
+2026-04-04 00:01:11,272 - ModeOS - INFO - [INFO] Setting brightness -> 20%
+2026-04-04 00:01:13,447 - ModeOS - INFO - [OK] Brightness verified at 30%
+2026-04-04 00:01:13,447 - ModeOS - INFO - [INFO] Setting volume -> 60%
+2026-04-04 00:01:13,961 - ModeOS - INFO - [OK] Volume verified at 60%
+2026-04-04 00:01:13,961 - ModeOS - INFO - [INFO] Setting night light -> ON
+2026-04-04 00:01:15,015 - ModeOS - WARNING - [WARN] Night light unverified (Expected: True, Got: False). Retrying once...
+2026-04-04 00:01:16,072 - ModeOS - ERROR - [ERROR] Failed to set night light after retry.
+2026-04-04 00:01:16,111 - ModeOS - INFO - Target app 'spotify' (exec: 'spotify') is not currently running to adjust priority.
+2026-04-04 00:01:16,111 - ModeOS - INFO - Global CPU prioritization adjusting toward mode limit (20%)
+2026-04-04 00:01:16,612 - ModeOS - INFO - 
+--- System Stats Comparison ---
+2026-04-04 00:01:16,612 - ModeOS - INFO - CPU Usage:    0.9% -> 0.6%
+2026-04-04 00:01:16,612 - ModeOS - INFO - Memory Usage: 76.5% -> 74.6%
+2026-04-04 00:01:16,612 - ModeOS - INFO - -------------------------------
+
+2026-04-04 00:01:16,612 - ModeOS - INFO - === 'MUSIC' Mode Activated Successfully ===
+2026-04-04 00:01:32,391 - ModeOS - INFO - Restoring previous system state...
+2026-04-04 00:01:32,391 - ModeOS - INFO - [INFO] Setting brightness -> 0%
+2026-04-04 00:01:32,919 - ModeOS - WARNING - [WARN] Brightness unverified (Expected: 0%, Got: 30%). Retrying once...
+2026-04-04 00:01:33,446 - ModeOS - ERROR - [ERROR] Failed to set brightness after retry.
+2026-04-04 00:01:33,446 - ModeOS - INFO - [INFO] Setting night light -> OFF
+2026-04-04 00:01:34,512 - ModeOS - INFO - [OK] Night light verified (OFF)
+2026-04-04 00:01:34,512 - ModeOS - INFO - System restored successfully
+2026-04-04 00:15:19,145 - ModeOS - INFO - Saving current system state...
+2026-04-04 00:15:19,181 - ModeOS - INFO - State saved correctly: {'volume': 77, 'brightness': 18, 'night_light': False}
+2026-04-04 00:15:19,181 - ModeOS - INFO - [MODE] reading
+2026-04-04 00:15:21,868 - ModeOS - INFO - [✔] Brightness -> 30%
+2026-04-04 00:15:22,383 - ModeOS - INFO - [✔] Volume -> 0%
+2026-04-04 00:15:22,448 - ModeOS - INFO - [✔] Night light -> ON
+2026-04-04 00:15:22,490 - ModeOS - INFO - Target app 'discord' (exec: 'discord') is not currently running.
+2026-04-04 00:15:22,490 - ModeOS - INFO - Target app 'steam' (exec: 'steam') is not currently running.
+2026-04-04 00:15:22,490 - ModeOS - INFO - Target app 'vlc' (exec: 'vlc') is not currently running.
+2026-04-04 00:15:22,528 - ModeOS - INFO - Target app 'chrome' (exec: 'chrome') is not currently running to adjust priority.
+2026-04-04 00:15:22,528 - ModeOS - INFO - Global CPU prioritization adjusting toward mode limit (30%)
+2026-04-04 00:15:23,028 - ModeOS - INFO - 
+--- System Stats Comparison ---
+2026-04-04 00:15:23,029 - ModeOS - INFO - CPU Usage:    1.9% -> 2.1%
+2026-04-04 00:15:23,029 - ModeOS - INFO - Memory Usage: 74.3% -> 72.6%
+2026-04-04 00:15:23,029 - ModeOS - INFO - -------------------------------
+
+2026-04-04 00:15:23,029 - ModeOS - INFO - [✔] MODE READING APPLIED
+2026-04-04 00:15:42,058 - ModeOS - INFO - Restoring previous system state...
+2026-04-04 00:15:42,572 - ModeOS - INFO - [✔] Volume -> 77%
+2026-04-04 00:15:42,572 - ModeOS - INFO - [INFO] Adjusted brightness target due to hardware limits
+2026-04-04 00:15:44,753 - ModeOS - INFO - [✔] Brightness -> 20%
+2026-04-04 00:15:44,763 - ModeOS - INFO - [✔] Night light -> OFF
+2026-04-04 00:15:44,764 - ModeOS - INFO - System restored successfully

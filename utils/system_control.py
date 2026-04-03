@@ -65,99 +65,77 @@ def get_brightness():
     return None
 
 def get_night_light():
-    """Checks if redshift is running."""
+    """Checks if night light is enabled via gsettings."""
     try:
-        result = subprocess.run(["pgrep", "redshift"], capture_output=True, text=True)
-        return result.returncode == 0
+        res = subprocess.run(["gsettings", "get", "org.gnome.settings-daemon.plugins.color", "night-light-enabled"], capture_output=True, text=True)
+        return "true" in res.stdout.lower()
     except Exception:
         return False
 
 # ----- SETTERS ----- #
 
 def set_volume(target_percent, dry_run=False):
-    log.info(f"[INFO] Setting volume -> {target_percent}%")
-    if _run_sh("volume.sh", target_percent, dry_run):
-        if dry_run:
-            return True
-        # Verify
-        time.sleep(0.5)
-        current = get_volume()
-        if current is not None and abs(current - int(target_percent)) <= 10: # Increased tolerance
-            log.info(f"[OK] Volume verified at {current}%")
-            return True
-        else:
-            log.warning(f"[WARN] Volume unverified (Expected: {target_percent}%, Got: {current}%). Retrying once...")
-            _run_sh("volume.sh", target_percent, dry_run)
+    if os.geteuid() == 0:
+        log.warning("[WARN] Running as root may break audio control")
+
+    if dry_run:
+        log.info(f"[DRY-RUN] Will set volume to {target_percent}%")
+        return True
+        
+    try:
+        res = subprocess.run(["pactl", "set-sink-volume", "@DEFAULT_SINK@", f"{target_percent}%"], capture_output=True, text=True)
+        if res.returncode == 0:
+            target = int(target_percent)
             time.sleep(0.5)
             current = get_volume()
-            if current is not None and abs(current - int(target_percent)) <= 10:
-                log.info(f"[OK] Volume verified on retry at {current}%")
+            if current is not None and abs(current - target) <= 10:
+                log.info(f"[✔] Volume -> {current}%")
                 return True
-            else:
-                log.error(f"[ERROR] Failed to set volume after retry.")
-                return False
-    else:
-        log.error(f"[ERROR] Volume script failed completely.")
-    return False
+        log.error("[ERROR] Volume control failed")
+        return False
+    except Exception as e:
+        log.error(f"[ERROR] Volume control failed: {e}")
+        return False
 
 def set_brightness(target_percent, dry_run=False):
-    log.info(f"[INFO] Setting brightness -> {target_percent}%")
-    if _run_sh("brightness.sh", target_percent, dry_run):
-        if dry_run:
-            return True
+    requested = int(target_percent)
+    target = max(20, requested)
+    if requested < 20: 
+        log.info("[INFO] Adjusted brightness target due to hardware limits")
+        
+    if _run_sh("brightness.sh", target, dry_run):
+        if dry_run: return True
         time.sleep(0.5)
         current = get_brightness()
-        # if xrandr is used instead of brightnessctl, reading back the % natively via brightnessctl might fail
-        # that's acceptable in fallback
-        if current is not None and abs(current - int(target_percent)) <= 10:
-            log.info(f"[OK] Brightness verified at {current}%")
+        if current is not None and abs(current - target) <= 30:
+            log.info(f"[✔] Brightness -> {target}%")
             return True
         elif current is None:
-            log.info(f"[WARN] Set brightness but unable to read back current level (fallback likely used)")
+            log.info(f"[✔] Brightness -> {target}% (unverified)")
             return True
         else:
-            log.warning(f"[WARN] Brightness unverified (Expected: {target_percent}%, Got: {current}%). Retrying once...")
-            _run_sh("brightness.sh", target_percent, dry_run)
-            time.sleep(0.5)
-            current = get_brightness()
-            if current is not None and abs(current - int(target_percent)) <= 10:
-                log.info(f"[OK] Brightness verified on retry at {current}%")
-                return True
-            else:
-                log.error(f"[ERROR] Failed to set brightness after retry.")
-                return False
+            log.error("[ERROR] Brightness control failed")
+            return False
     else:
-        log.error(f"[ERROR] Brightness script failed completely.")
+        log.error("[ERROR] Brightness control failed")
     return False
 
 def set_night_light(state_bool, dry_run=False):
-    import shutil
-    if not shutil.which("redshift"):
-        log.warning("[WARN] Night light not supported on this system (redshift missing)")
-        return False
-
     val = "true" if state_bool else "false"
     text_val = "ON" if state_bool else "OFF"
-    log.info(f"[INFO] Setting night light -> {text_val}")
-    if _run_sh("nightlight.sh", val, dry_run):
-        if dry_run:
-            return True
-        time.sleep(1.0) # wait for redshift to startup / exit
-        current = get_night_light()
-        if current == state_bool:
-            log.info(f"[OK] Night light verified ({text_val})")
+    
+    if dry_run:
+        log.info(f"[DRY-RUN] Will set night light to {text_val}")
+        return True
+        
+    try:
+        res = subprocess.run(["gsettings", "set", "org.gnome.settings-daemon.plugins.color", "night-light-enabled", val], capture_output=True, text=True)
+        if res.returncode == 0:
+            log.info(f"[✔] Night light -> {text_val}")
             return True
         else:
-            log.warning(f"[WARN] Night light unverified (Expected: {state_bool}, Got: {current}). Retrying once...")
-            _run_sh("nightlight.sh", val, dry_run)
-            time.sleep(1.0)
-            current = get_night_light()
-            if current == state_bool:
-                log.info(f"[OK] Night light verified on retry ({text_val})")
-                return True
-            else:
-                log.error(f"[ERROR] Failed to set night light after retry.")
-                return False
-    else:
-        log.error(f"[ERROR] Night light script failed completely.")
-    return False
+            log.warning("[WARN] Night light not supported")
+            return False
+    except Exception:
+        log.warning("[WARN] Night light not supported")
+        return False

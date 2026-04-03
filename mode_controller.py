@@ -43,8 +43,8 @@ def run_script(script_name, arg):
 
 def apply_mode(mode_name, dry_run=False):
     """Orchestrates the application of a specified mode."""
-    mode_text = "[DRY-RUN] Activating" if dry_run else "Activating"
-    log.info(f"=== {mode_text} '{mode_name.upper()}' Mode ===")
+    mode_text = "[DRY-RUN] " if dry_run else ""
+    log.info(f"{mode_text}[MODE] {mode_name.lower()}")
     
     config = load_mode_config(mode_name)
     if not config:
@@ -98,7 +98,7 @@ def apply_mode(mode_name, dry_run=False):
     stats_after = get_system_stats()
     print_stats_comparison(stats_before, stats_after)
     
-    log.info(f"=== '{mode_name.upper()}' Mode Activated Successfully ===")
+    log.info(f"[✔] MODE {mode_name.upper()} APPLIED")
     return True
 
 def reset_system(dry_run=False):
