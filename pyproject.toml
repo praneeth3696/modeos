@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modeos"
+version = "1.1.0"
+description = "Adaptive OS Mode Manager - Hardware and process state coordinator for Linux"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "ModeOS Team" }
+]
+keywords = ["linux", "system", "performance", "focus", "workspaces", "modes", "cgroups", "backlight", "audio"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Hardware",
+    "Topic :: Utilities"
+]
+dependencies = [
+    "PyYAML>=6.0",
+    "psutil>=5.9.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov"
+]
+
+[project.scripts]
+modeos = "modeos.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["modeos*"]

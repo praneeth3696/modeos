@@ -1,0 +1,16 @@
+services:
+  modeos-test:
+    build: .
+    container_name: modeos_sandbox
+    environment:
+      - MODEOS_MOCK=1
+    command: ["python3", "-m", "unittest", "discover", "-s", "tests", "-p", "test_*.py"]
+
+  modeos-cli:
+    build: .
+    container_name: modeos_cli
+    environment:
+      - MODEOS_MOCK=1
+    stdin_open: true
+    tty: true
+    command: ["modeos", "doctor"]
