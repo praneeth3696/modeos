@@ -30,11 +30,11 @@ ModeOS requires `python3` (>= 3.8), `psutil`, and `PyYAML`.
 
 ```bash
 # Clone the repository
-git clone https://github.com/modeos/modeos.git
+git clone https://github.com/praneeth3696/modeos.git
 cd modeos
 
-# Install ModeOS CLI in editable mode
-pip install -e .
+# Install ModeOS CLI in editable mode (add [dev] for the test tools)
+pip install -e ".[dev]"
 ```
 
 ### 2. Supported Linux Subsystems
@@ -116,8 +116,10 @@ modeos reset
 ### Running Unit & Integration Tests
 ModeOS includes a comprehensive test suite covering hardware backends, process managers, state reversions, and YAML schemas:
 ```bash
-python3 -m unittest discover -s tests -p "test_*.py"
+python3 -m pytest
 ```
+The pytest run sandboxes XDG directories (see `tests/conftest.py`), so it never writes into your real
+`~/.config`, `~/.local/state` or `~/.cache`. CI runs the same command on Python 3.9–3.13 with `MODEOS_MOCK=1`.
 
 ### Running with Mock Backends
 You can test ModeOS on any machine (including macOS or headless servers) without native Linux hardware:
