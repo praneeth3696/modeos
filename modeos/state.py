@@ -17,10 +17,11 @@ log = get_logger()
 def capture_current_state(
     active_mode: Optional[str] = None,
     modified_priorities: Optional[Dict[int, int]] = None,
-    terminated_apps: Optional[list] = None
+    terminated_apps: Optional[list] = None,
+    force_mock: bool = False
 ) -> Dict[str, Any]:
     """Captures the current hardware and process states."""
-    mock = is_mock_mode()
+    mock = force_mock or is_mock_mode()
     audio = get_audio_backend(force_mock=mock)
     display = get_display_backend(force_mock=mock)
     nightlight = get_nightlight_backend(force_mock=mock)
@@ -38,11 +39,12 @@ def capture_current_state(
 def save_state(
     active_mode: Optional[str] = None,
     modified_priorities: Optional[Dict[int, int]] = None,
-    terminated_apps: Optional[list] = None
+    terminated_apps: Optional[list] = None,
+    force_mock: bool = False
 ) -> bool:
     """Saves current state to state file."""
     state_file = get_state_file()
-    state = capture_current_state(active_mode, modified_priorities, terminated_apps)
+    state = capture_current_state(active_mode, modified_priorities, terminated_apps, force_mock=force_mock)
 
     try:
         state_file.parent.mkdir(parents=True, exist_ok=True)
@@ -66,7 +68,7 @@ def load_last_state() -> Optional[Dict[str, Any]]:
         log.warning(f"Failed to read state file: {e}")
         return None
 
-def restore_state(dry_run: bool = False) -> bool:
+def restore_state(dry_run: bool = False, force_mock: bool = False) -> bool:
     """Restores the system state from the last saved state file."""
     state = load_last_state()
     if not state:
@@ -76,7 +78,7 @@ def restore_state(dry_run: bool = False) -> bool:
     prefix = "[DRY-RUN] " if dry_run else ""
     log.info(f"{prefix}Reverting system state to pre-mode configuration...")
 
-    mock = is_mock_mode()
+    mock = force_mock or is_mock_mode()
     audio = get_audio_backend(force_mock=mock)
     display = get_display_backend(force_mock=mock)
     nightlight = get_nightlight_backend(force_mock=mock)
