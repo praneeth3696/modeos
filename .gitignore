@@ -38,6 +38,7 @@ venv.bak/
 logs/*.log
 *.log
 data/last_state.json
+data/installed_apps.json
 
 # Unit test / coverage reports
 .coverage
