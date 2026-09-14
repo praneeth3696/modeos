@@ -77,5 +77,37 @@ class TestCLI(unittest.TestCase):
         self.assertEqual(code, 0)
         self.assertIn("Permissions healthy", out)
 
+
+class TestMockFlag(unittest.TestCase):
+    """--mock must reach the engine whether it is given before or after the subcommand."""
+
+    def parse_force_mock(self, args_list):
+        seen = {}
+
+        def record(*args, **kwargs):
+            seen["force_mock"] = kwargs.get("force_mock")
+            return True
+
+        with patch("modeos.cli.apply_mode", side_effect=record), \
+             patch("modeos.cli.reset_system", side_effect=record), \
+             patch("modeos.cli.revert_system", side_effect=record), \
+             patch.object(sys, "argv", ["modeos"] + args_list):
+            main()
+        return seen["force_mock"]
+
+    def test_global_mock_flag_before_subcommand(self):
+        self.assertTrue(self.parse_force_mock(["--mock", "mode", "gaming"]))
+        self.assertTrue(self.parse_force_mock(["--mock", "reset"]))
+        self.assertTrue(self.parse_force_mock(["--mock", "revert"]))
+
+    def test_mock_flag_after_subcommand(self):
+        self.assertTrue(self.parse_force_mock(["mode", "gaming", "--mock"]))
+        self.assertTrue(self.parse_force_mock(["reset", "--mock"]))
+        self.assertTrue(self.parse_force_mock(["revert", "--mock"]))
+
+    def test_no_mock_flag(self):
+        self.assertFalse(self.parse_force_mock(["mode", "gaming"]))
+        self.assertFalse(self.parse_force_mock(["revert"]))
+
 if __name__ == "__main__":
     unittest.main()

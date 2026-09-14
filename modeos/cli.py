@@ -94,7 +94,7 @@ def main():
     mode_parser = subparsers.add_parser("mode", help="Switch system mode")
     mode_parser.add_argument("mode_name", help="Name of the mode to activate (e.g., deep_work, gaming)")
     mode_parser.add_argument("--dry-run", action="store_true", help="Safe simulation: preview actions without applying")
-    mode_parser.add_argument("--mock", action="store_true", help="Run with simulated hardware backends")
+    mode_parser.add_argument("--mock", action="store_true", default=argparse.SUPPRESS, help="Run with simulated hardware backends")
 
     # 'list' command
     subparsers.add_parser("list", help="List all available modes")
@@ -105,12 +105,12 @@ def main():
     # 'reset' command
     reset_parser = subparsers.add_parser("reset", help="Reset system hardware and process priorities to defaults")
     reset_parser.add_argument("--dry-run", action="store_true", help="Preview reset actions")
-    reset_parser.add_argument("--mock", action="store_true", help="Run with simulated hardware backends")
+    reset_parser.add_argument("--mock", action="store_true", default=argparse.SUPPRESS, help="Run with simulated hardware backends")
 
     # 'revert' command
     revert_parser = subparsers.add_parser("revert", help="Revert system hardware and process priorities to pre-mode state")
     revert_parser.add_argument("--dry-run", action="store_true", help="Preview revert actions")
-    revert_parser.add_argument("--mock", action="store_true", help="Run with simulated hardware backends")
+    revert_parser.add_argument("--mock", action="store_true", default=argparse.SUPPRESS, help="Run with simulated hardware backends")
 
     # 'scan' command
     subparsers.add_parser("scan", help="Scan and index installed desktop applications")
@@ -131,8 +131,9 @@ def main():
     # Configure logger
     setup_logger(verbose=args.verbose)
 
-    # Determine mock mode
-    force_mock = getattr(args, "mock", False) or parser.parse_known_args()[0].mock
+    # Determine mock mode. Sub-command --mock flags use SUPPRESS as their default,
+    # so they never overwrite a --mock given before the sub-command.
+    force_mock = args.mock
 
     if args.command == "mode":
         success = apply_mode(args.mode_name, dry_run=args.dry_run, force_mock=force_mock)
