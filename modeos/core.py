@@ -102,7 +102,7 @@ def apply_mode(mode_name: str, dry_run: bool = False, force_mock: bool = False) 
 
     # Pre-flight state save before making modifications
     if not dry_run:
-        save_state(active_mode=config.name)
+        save_state(active_mode=config.name, force_mock=mock)
 
     # 1. Hardware Settings
     if config.brightness is not None:
@@ -135,7 +135,8 @@ def apply_mode(mode_name: str, dry_run: bool = False, force_mock: bool = False) 
         save_state(
             active_mode=config.name,
             modified_priorities=modified_priorities,
-            terminated_apps=terminated
+            terminated_apps=terminated,
+            force_mock=mock
         )
 
     # 4. CPU Throttling notification
@@ -169,4 +170,4 @@ def reset_system(dry_run: bool = False, force_mock: bool = False) -> bool:
 
 def revert_system(dry_run: bool = False, force_mock: bool = False) -> bool:
     """Reverts to pre-mode state including hardware and process priorities."""
-    return restore_state(dry_run=dry_run)
+    return restore_state(dry_run=dry_run, force_mock=force_mock)

@@ -9,6 +9,48 @@ from pathlib import Path
 from unittest.mock import patch, MagicMock
 from modeos.state import capture_current_state, load_last_state, restore_state, save_state
 
+@patch.dict("os.environ", {"MODEOS_MOCK": "0"})
+class TestForceMockPropagation(unittest.TestCase):
+    """A --mock session must never read or write real hardware during save/revert."""
+
+    @patch("modeos.state.get_nightlight_backend")
+    @patch("modeos.state.get_display_backend")
+    @patch("modeos.state.get_audio_backend")
+    def test_capture_uses_mock_backends_when_forced(self, audio, display, nightlight):
+        capture_current_state(force_mock=True)
+        audio.assert_called_once_with(force_mock=True)
+        display.assert_called_once_with(force_mock=True)
+        nightlight.assert_called_once_with(force_mock=True)
+
+    @patch("modeos.state.load_last_state", return_value={"volume": 40})
+    @patch("modeos.state.get_nightlight_backend")
+    @patch("modeos.state.get_display_backend")
+    @patch("modeos.state.get_audio_backend")
+    def test_restore_uses_mock_backends_when_forced(self, audio, display, nightlight, _load):
+        restore_state(dry_run=True, force_mock=True)
+        audio.assert_called_once_with(force_mock=True)
+        display.assert_called_once_with(force_mock=True)
+        nightlight.assert_called_once_with(force_mock=True)
+
+    @patch("modeos.core.restore_state", return_value=True)
+    def test_revert_system_passes_force_mock(self, restore):
+        from modeos.core import revert_system
+        revert_system(dry_run=False, force_mock=True)
+        restore.assert_called_once_with(dry_run=False, force_mock=True)
+
+    @patch("modeos.core.adjust_priorities", return_value={1234: 0})
+    @patch("modeos.core.kill_all_except", return_value=[])
+    @patch("modeos.core.kill_apps", return_value=[])
+    @patch("modeos.core.get_installed_apps", return_value={})
+    @patch("modeos.core.save_state", return_value=True)
+    def test_apply_mode_saves_state_with_force_mock(self, save, *_process_mocks):
+        from modeos.core import apply_mode
+        self.assertTrue(apply_mode("deep_work", dry_run=False, force_mock=True))
+        self.assertGreaterEqual(save.call_count, 1)
+        for call in save.call_args_list:
+            self.assertTrue(call.kwargs.get("force_mock"))
+
+
 class TestStateManager(unittest.TestCase):
 
     @patch("modeos.state.get_state_file")
